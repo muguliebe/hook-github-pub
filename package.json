@@ -1,0 +1,33 @@
+{
+  "name": "hook-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "nodemonConfig": {
+    "exec": "npm run start",
+    "ignore": [
+      "**/__tests__/**",
+      "*.test.js",
+      "*.spec.js",
+      "**/log/**"
+    ]
+  },
+  "scripts": {
+    "dw": "nodemon",
+    "start": "node -r esm server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "date-utils": "^1.2.21",
+    "esm": "^3.2.25",
+    "github-webhook-handler": "^1.0.0",
+    "mkdirp": "^1.0.4",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
